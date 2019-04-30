@@ -1,0 +1,40 @@
+.posterSlider {
+  height: 100%;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 0;
+    padding: 0;
+    
+    li {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: rgba(#fff, 0.6);
+      
+      &:nth-child(n+2) {
+        margin-left: 8px;
+      }
+      &.slick-active {
+        background: rgba(#fff, 1);
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+  }
+}
